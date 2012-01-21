@@ -1,0 +1,28 @@
+{
+	"BundleType": "Application",
+	"AppIcon": {
+		"18x18": "favicon.png"
+	},
+	"AppName": {
+		"en": "Chatify"
+	},
+	"SupportedLanguages": [
+		"en"
+	],
+    "RequiredPermissions": [
+		"http://10.0.1.4:8090"
+	],
+    "DefaultTabs": [{
+        "arguments": "chatroom",
+        "title": {
+            "en": "Chat room",
+            "es": "El Chat room"
+        }
+    }, {
+        "arguments": "preferences",
+        "title": {
+            "en": "Preferences",
+            "es": "El Preferences"
+        }
+    }]
+}

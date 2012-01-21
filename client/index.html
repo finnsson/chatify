@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My First App</title>
+    <link rel="stylesheet" href="sp://import/css/adam.css">
+    <link rel="stylesheet" href="sp://import/css/api.css">
+    <link rel="stylesheet" href="tutorial.css">
+    <script src="js/socket.io.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <!-- script src="localhost:8090/socket.io/socket.io.js"></script -->
+    <!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script-->
+
+</head>
+<body onload="var sp = getSpotifyApi(1); var chatify = sp.require('chatify'); chatify.init();">
+
+<!-- script>
+    var socket = io.connect('http://localhost:8090');
+
+    socket.on('newText', function(data) {
+        $('#texts').append('<li>' + data.username + ': ' + data.text + '</li>');
+    });
+
+    var say = function() {
+        var textToSayElement = $('#text_to_say');
+        var username = $('#username').val();
+        var textToSay = textToSayElement.val();
+        textToSayElement.val('');
+        socket.emit('textToSay', {text: textToSay, username: username});
+    };
+</script -->
+
+
+<ul id="texts">
+
+</ul>
+
+<label class="label" for="username">Username:</label>
+<input class="input" type="text" id="username"/>
+<br/>
+<label class="label" for="text_to_say">Say:</label>
+<input class="input" type="text" id="text_to_say"/>
+
+</body>
+</html>
